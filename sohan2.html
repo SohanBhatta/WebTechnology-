@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('5b88e4a3-f911-46ca-b497-5f580a1593b9.png');
+        }
+        #d1{
+            height: 100px;
+            width: 100px;
+            margin-top: 10%;
+            margin-left: 40%;
+            
+        }
+        a{
+            margin-left: 20%;
+            margin-top: 40%;
+            color: aliceblue;
+        }
+        
+        #d{
+            height: 60px;
+            width: 60px;
+            border: 6px solid aqua;
+            margin-top: 15%;
+            margin-left: 20%;
+            box-shadow: 5px 6px 3px yellow;
+            animation-duration: 3s;
+            animation-name: sohan;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in-out;
+            
+        }
+
+        #d:hover{
+            animation-play-state: paused;
+        }
+        @keyframes sohan{
+            0%{
+                transform: rotate(0);
+            }
+            33%{
+                transform: rotateX(180deg) rotateY(0) rotateZ(0);
+                scale: 0.8;
+            }
+            66%{
+                transform: rotateX(180deg) rotateY(180deg) rotate(0);
+            }
+            100%{
+                transform: rotateX(180deg) rotateY(180deg) rotate(180deg);
+                scale: 0.7;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">
+    <div id="d">
+    </div>
+    <a>Loading...</a>
+    </div>
+</body>
+</html>
